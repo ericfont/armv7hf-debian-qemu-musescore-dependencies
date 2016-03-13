@@ -16,7 +16,6 @@ RUN git config --global http.sslVerify true
 
 # get and build AppImageKit
 RUN git clone --depth 1 https://github.com/probonopd/AppImageKit.git
-RUN cd AppImageKit
-RUN bash build.sh
+RUN ./AppImageKit/build.sh
 
 RUN [ "cross-build-end" ]  
