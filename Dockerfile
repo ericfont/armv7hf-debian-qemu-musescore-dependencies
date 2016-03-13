@@ -17,7 +17,6 @@ RUN git config --global http.sslVerify true
 # get and build AppImageKit
 RUN wget https://github.com/probonopd/AppImageKit/archive/5.tar.gz
 RUN tar -xvzf 5.tar.gz
-RUN cd AppImageKit-5
-RUN ./build.sh
+RUN bash AppImageKit-5/build.sh
 
 RUN [ "cross-build-end" ]  
